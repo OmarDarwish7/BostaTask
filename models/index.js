@@ -6,8 +6,25 @@ import Sequelize, { DataTypes } from 'sequelize';
 import { env as _env } from 'process';
 const basename = _basename(__filename);
 const env = _env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
+
+const configJson = {
+  "development": {
+    "username": _env.DB_USERNAME,
+    "password": _env.DB_PASSWORD,
+    "database": _env.DB_NAME,
+    "host": _env.DB_HOST,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
+
+const config = configJson[env];
 
 let sequelize;
 if (config.use_env_variable) {

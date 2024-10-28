@@ -1,7 +1,11 @@
 // config/database.js
 import { Sequelize } from 'sequelize';
+import dotenv from 'dotenv';
 
-const sequelize = new Sequelize('postgresql://bosta-task-db_owner:d3f8CTLhKRbP@ep-withered-credit-a2rdp1gy.eu-central-1.aws.neon.tech/bosta-task-db?sslmode=require', {
+// Load environment variables from .env file
+dotenv.config();
+
+const sequelize = new Sequelize(process.env.DB_CONNECTION_STRING, {
   dialect: 'postgres',
   ssl: {
     require: true,
