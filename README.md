@@ -54,7 +54,6 @@ This project is a simple Library Management System designed to manage books and 
 
    ```bash
    git clone <repository-url>
-   cd library-management-system
    ```
 
 2. **Install Dependencies**:
