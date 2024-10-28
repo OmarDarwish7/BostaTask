@@ -37,5 +37,5 @@ export const Book = sequelize.define('Books', {
 
 Book.belongsTo(Borrower, {
     foreignKey: 'borrowerId',
-    onDelete: 'CASCADE'
+    onDelete: 'SET NULL'
 });
