@@ -18,12 +18,6 @@ This project is a simple Library Management System designed to manage books and 
 - [Contributing](#contributing)
 - [License](#license)
 
-## Objectives
-
-The objective of this assessment is to design and implement a library management system that allows users to manage books and borrowers effectively, while maintaining performance and scalability.
-
-## Functional Requirements
-
 ### Books
 
 - **Add a Book**: Allow users to add a book with details such as title, author, ISBN, available quantity, and shelf location.
@@ -45,12 +39,6 @@ The objective of this assessment is to design and implement a library management
 - **Return a Book**: A borrower can return a book that they have checked out.
 - **Check Current Borrowed Books**: A borrower can view the books they currently have.
 - **Track Due Dates**: The system will keep track of due dates for borrowed books and list books that are overdue.
-
-## Non-functional Requirements
-
-1. **Performance**: The system should be optimized for reading operations, as searching and listing books and borrowers will be frequent operations.
-2. **Scalability**: The design should support future enhancements, such as adding reservations or reviews.
-3. **Security**: User inputs should be validated to prevent SQL injection and other potential security threats.
 
 ## Technologies Used
 
