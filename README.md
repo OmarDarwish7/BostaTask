@@ -7,11 +7,9 @@ This project is a simple Library Management System designed to manage books and 
 ## Table of Contents
 
 - [Objectives](#objectives)
-- [Functional Requirements](#functional-requirements)
   - [Books](#books)
   - [Borrowers](#borrowers)
   - [Borrowing Process](#borrowing-process)
-- [Non-functional Requirements](#non-functional-requirements)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
