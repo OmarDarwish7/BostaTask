@@ -1,6 +1,5 @@
-// models/User.js
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js'; // adjust path as needed
+import sequelize from '../config/database.js';
 import { Book } from './Book.js';
 import { Borrower } from './Borrower.js';
 

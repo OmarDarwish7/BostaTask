@@ -1,4 +1,3 @@
-// routes/bookRoutes.js
 import express from 'express';
 import * as BorrowerController from '../controllers/BorrowersController.js'
 const router = express.Router();

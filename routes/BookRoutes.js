@@ -1,4 +1,3 @@
-// routes/bookRoutes.js
 import express from 'express';
 import * as BookControllers from '../controllers/BookController.js';
 

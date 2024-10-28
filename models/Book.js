@@ -1,4 +1,3 @@
-// models/User.js
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js'; // adjust path as needed
 import { Borrower } from './Borrower.js';
@@ -26,13 +25,6 @@ export const Book = sequelize.define('Books', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    borrowerId:{
-        type:DataTypes.INTEGER,
-        references:{
-            model:Borrower,
-            key:'id'
-        }
-    }
 });
 
 Book.belongsTo(Borrower, {
